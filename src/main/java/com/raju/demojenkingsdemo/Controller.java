@@ -1,5 +1,6 @@
 package com.raju.demojenkingsdemo;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class Controller {
 
+    @GetMapping("/hello")
     public String getUserDetails(){
         return "hello raju";
     }
